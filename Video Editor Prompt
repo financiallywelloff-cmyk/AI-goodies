@@ -1,0 +1,131 @@
+Here's a README you can share:
+
+markdown# Video Editor Prompt
+
+Turn messy raw footage into a tight, polished script. This prompt helps you identify which takes to keep, what to cut, and how to structure your final edit.
+
+## Quick Start
+
+1. **Get your video ready** (see options below)
+2. **Copy the prompt** at the bottom of this file
+3. **Paste into your AI of choice** with your video/transcript
+4. **Review the edit recommendations**
+
+## Recommended Models
+
+| Model | Video Support | How to Use |
+|-------|---------------|------------|
+| **Gemini 2.5 Pro** ⭐ | ✅ Direct upload or YouTube link | Upload video or paste link directly |
+| **ChatGPT (GPT-4o)** | ✅ Upload only | Upload video file in chat |
+| **Claude** | ❌ No video | Transcribe first, then paste transcript |
+
+**Best option:** Gemini — just paste a YouTube link or upload your raw footage directly.
+
+## Three Ways to Use This
+
+### Option 1: Direct Video (Gemini or ChatGPT)
+1. Upload your raw video file or paste the YouTube link
+2. Paste the prompt below
+3. Get edit recommendations with timestamps
+
+### Option 2: Transcript First (Any Model)
+1. Transcribe your video using:
+   - YouTube auto-captions (free)
+   - Descript (free tier available)
+   - Whisper (free, local)
+   - TurboScribe (fast, cheap)
+2. Paste transcript + prompt into any AI
+3. Get edit recommendations
+
+### Option 3: Manual Timestamps
+If you need precise cuts, include timestamps in your transcript:
+```
+[0:00] I used to write five different posts...
+[0:05] I used to write five different... (trails off)
+[0:08] I used to write five different posts for every piece of content.
+[0:12] Now I write one idea and this workflow handles the rest.
+```
+
+---
+
+## The Prompt
+```
+You are a video editor analyzing raw footage to create a polished script.
+
+YOUR GOALS (in priority order):
+1. FLOW - Must sound natural when spoken aloud
+2. VALUE - Every sentence earns its place  
+3. DURATION - 45-60 seconds for shorts, tighter is better
+
+WHAT RAW FOOTAGE LOOKS LIKE:
+When someone records, they often:
+- Try the same line 3-4 times (duplicate takes)
+- Stumble and restart mid-sentence (failed takes)
+- Warm up as they go (later takes are usually BETTER)
+
+DECISION FRAMEWORK:
+For each segment, ask:
+
+1. Is this a duplicate of something already kept?
+   → Keep only ONE (prefer the LAST complete take)
+
+2. Is it incomplete, stuttering, or garbled?
+   → Cut it
+
+3. Does it add NEW information?
+   → Keep it
+
+4. Does it flow naturally from the previous line?
+   → If not, you may need to keep a transition
+
+WHAT TO CUT AGGRESSIVELY:
+- Filler phrases: "basically," "you know," "honestly," "like"
+- Self-references: "as I mentioned," "like I said"
+- Redundancy: same point stated twice in different words
+- Technical fluff: model names, specs viewers don't care about
+
+STRUCTURE TO PRESERVE:
+- HOOK: Problem → Solution → Credibility (first 10-15 sec)
+- BODY: Steps or explanation (the value)
+- CTA: What viewer should do next
+
+OUTPUT FORMAT:
+List segments to KEEP in playback order:
+- Timestamp range
+- What it covers
+- Why it was kept
+
+Then list what was CUT and why.
+
+REMEMBER: A tight 45-second video beats a bloated 90-second one. When in doubt, cut it.
+```
+
+---
+
+## Tips for Better Results
+
+1. **Record more takes than you need** — the AI will find the best one
+2. **Say your hook 3-4 times** — you'll warm up and the last take is usually cleanest
+3. **Don't worry about mistakes while recording** — that's what this is for
+4. **Review the AI's recommendations** — it's a starting point, not gospel
+
+## Example Output
+```
+KEEP:
+[0:08-0:12] "I used to write five different posts for every piece of content."
+  → Hook problem statement, last complete take
+
+[0:12-0:16] "Now I write one idea and this workflow handles the rest."
+  → Hook solution, clean delivery
+
+[0:16-0:19] "I haven't manually repurposed anything in weeks."
+  → Credibility statement
+
+CUT:
+[0:00-0:05] First take of hook - incomplete, speaker warming up
+[0:05-0:08] Second take - trails off mid-sentence
+```
+
+---
+
+Made by @chrisbuildssystems
